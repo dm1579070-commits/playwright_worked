@@ -1,8 +1,8 @@
 import pytest
-#декоратор-условие, который говорит, что этот тест нельзя запускатьна всех браузерах, кроме chromium
-@pytest.mark.only_browser("chromium")  
+#декоратор-условие, который говорит, что этот тест нельзя запускатьна всех браузерах, кроме firefox
+@pytest.mark.only_browser("firefox")  
 def test_visit_example(page):           #тестовая функция
-    page.goto("https://example.com")    #открывает сайт
+    page.goto("https://store.steampowered.com/")    #открывает сайт
 
 
 
